@@ -71,7 +71,7 @@ export default function CoverageMap() {
             />
             
             {/* Overlay Info Card */}
-            <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-slate-100 max-w-xs hidden sm:block">
+            <div className="absolute bottom-4 left-4 right-4 sm:top-4 sm:bottom-auto sm:right-auto bg-white/95 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-slate-100 sm:max-w-xs">
               <h3 className="font-semibold text-primary flex items-center gap-2 mb-2">
                 <MapPin className="w-4 h-4 text-sky-600" />
                 Nationwide Reach

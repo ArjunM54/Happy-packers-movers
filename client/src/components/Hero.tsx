@@ -16,7 +16,7 @@ export default function Hero() {
   ];
 
   return (
-    <section id="home" className="pt-32 pb-16 md:pt-40 md:pb-24 bg-white overflow-hidden">
+    <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-white overflow-hidden">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -64,13 +64,15 @@ export default function Hero() {
             </div>
 
             {/* WhatsApp CTA */}
-            <button
-              onClick={() => window.open('https://wa.me/919894525335', '_blank')}
-              className="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-medium transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Chat on WhatsApp
-            </button>
+            <div className="flex justify-center sm:justify-start">
+              <button
+                onClick={() => window.open('https://wa.me/919894525335', '_blank')}
+                className="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-medium transition-colors"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Chat on WhatsApp
+              </button>
+            </div>
 
             {/* Trust Badge */}
             <div className="mt-12 pt-8 border-t border-slate-100">
