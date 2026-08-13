@@ -35,7 +35,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center gap-3 flex-shrink-0">
           <img src="/logo-icon.png" alt="Happy Packers Logo" className="w-10 h-10 object-contain bg-white rounded-md p-1" />
-          <div className="hidden sm:block">
+          <div>
             <h1 className="text-sm font-bold text-primary leading-tight">Happy Packers</h1>
             <p className="text-xs text-slate-600">& Logistics</p>
           </div>
