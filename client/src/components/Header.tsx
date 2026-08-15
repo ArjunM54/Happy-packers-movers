@@ -33,13 +33,13 @@ export default function Header() {
     >
       <div className="container flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-3 flex-shrink-0">
-          <img src="/logo-icon.png" alt="Happy Packers Logo" className="w-10 h-10 object-contain bg-white rounded-md p-1" />
-          <div>
+        <a href="#home" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
+          <img src="/happy-logo.jpeg" alt="Happy Packers Logo" className="w-10 h-10 object-contain bg-white rounded-md p-1" />
+          <div className="flex flex-col">
             <h1 className="text-sm font-bold text-primary leading-tight">Happy Packers</h1>
             <p className="text-xs text-slate-600">& Logistics</p>
           </div>
-        </div>
+        </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-8">
