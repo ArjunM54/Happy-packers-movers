@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -8,13 +8,13 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-sky-400 rounded-lg flex items-center justify-center">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
+              <img 
+                src="/happy-logo.jpeg" 
+                alt="Happy Packers Logo" 
+                className="h-10 w-auto object-contain bg-white rounded p-1 flex-shrink-0" 
+              />
               <div>
-                <h3 className="font-bold text-sm">Happy Packers</h3>
+                <h3 className="font-bold text-sm leading-tight text-white">Happy packers and Movers</h3>
                 <p className="text-xs text-sky-200">& Logistics</p>
               </div>
             </div>
@@ -72,6 +72,17 @@ export default function Footer() {
                   Kurumbapalayam, Coimbatore - 641 107
                 </p>
               </div>
+              <div className="flex items-start gap-2">
+                <Instagram className="w-4 h-4 mt-0.5 flex-shrink-0 text-pink-400" />
+                <a 
+                  href="https://www.instagram.com/happypackersmovers?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-sky-100 hover:text-white transition-colors break-all"
+                >
+                  Instagram
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -90,7 +101,7 @@ export default function Footer() {
             <p className="text-sm text-sky-100 mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Happy Packers and Movers & Logistics. All rights reserved.
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex flex-wrap items-center gap-3">
               <a
                 href="https://wa.me/919894525335"
                 target="_blank"
@@ -99,6 +110,15 @@ export default function Footer() {
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp
+              </a>
+              <a
+                href="https://www.instagram.com/happypackersmovers?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 hover:opacity-90 rounded-lg transition-opacity text-sm font-medium text-white shadow-sm"
+              >
+                <Instagram className="w-4 h-4" />
+                Instagram
               </a>
             </div>
           </div>

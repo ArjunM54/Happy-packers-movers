@@ -33,16 +33,19 @@ export default function Header() {
     >
       <div className="container flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-          <img src="/happy-logo.jpeg" alt="Happy Packers Logo" className="w-10 h-10 object-contain bg-white rounded-md p-1" />
-          <div className="flex flex-col">
-            <h1 className="text-sm font-bold text-primary leading-tight">Happy Packers</h1>
-            <p className="text-xs text-slate-600">& Logistics</p>
-          </div>
+        <a href="#home" className="flex items-center gap-2 sm:gap-3 hover:opacity-90 transition-opacity flex-shrink-0">
+          <img 
+            src="/happy-logo.jpeg" 
+            alt="Happy Packers Logo" 
+            className="w-20 h-10 sm:w-24 sm:h-12 object-contain bg-white rounded-md p-1 flex-shrink-0" 
+          />
+          <h1 className="text-xs sm:text-xs md:text-sm lg:text-sm xl:text-lg font-black text-slate-900 tracking-tight whitespace-normal sm:whitespace-nowrap leading-tight max-w-[170px] sm:max-w-none">
+            Happy packers and Movers & Logistics
+          </h1>
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -65,13 +68,10 @@ export default function Header() {
             <Phone className="w-4 h-4 mr-2" />
             Call Now
           </Button>
-          <Button
-            size="sm"
-            className="bg-sky-600 hover:bg-sky-700 text-white"
-            onClick={() => document.getElementById('quote-section')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Get Free Quote
-          </Button>
+          <div className="bg-sky-50 text-slate-900 px-3 py-1.5 rounded-lg border border-sky-200 text-sm font-semibold flex items-center gap-1.5 shadow-sm">
+            <span className="text-[10px] text-sky-700 font-extrabold tracking-wider uppercase">GSTIN:</span>
+            <span className="font-mono text-xs font-bold text-slate-800">33BMJP0538B1ZU</span>
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -111,13 +111,10 @@ export default function Header() {
                 <Phone className="w-4 h-4 mr-2" />
                 Call Now
               </Button>
-              <Button
-                size="sm"
-                className="w-full bg-sky-600 hover:bg-sky-700 text-white"
-                onClick={() => document.getElementById('quote-section')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Get Free Quote
-              </Button>
+              <div className="bg-sky-50 text-slate-900 px-3 py-2 rounded-lg border border-sky-200 text-sm font-semibold flex items-center justify-center gap-2 shadow-sm">
+                <span className="text-xs text-sky-700 font-extrabold tracking-wider uppercase">GSTIN:</span>
+                <span className="font-mono text-sm font-bold text-slate-800">33BMJP0538B1ZU</span>
+              </div>
             </div>
           </div>
         </div>

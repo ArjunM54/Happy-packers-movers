@@ -22,19 +22,65 @@ export default function Hero() {
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-sky-50 rounded-full border border-sky-100">
               <div className="w-2 h-2 bg-sky-600 rounded-full" />
-              <span className="text-xs font-semibold text-sky-700 uppercase tracking-wide">Professional Packers & Movers in Coimbatore</span>
+              <span className="text-xs font-semibold text-sky-700 uppercase tracking-wide">All Over India Service Available</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
-              Packers and Movers in <span className="text-sky-600">Coimbatore</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-primary mb-6 leading-tight">
+              All Over India <span className="text-sky-600">Service Available</span>
             </h1>
 
-            <p className="text-lg text-slate-700 mb-4 leading-relaxed">
+            <p className="text-lg text-slate-700 mb-6 leading-relaxed">
               Happy Packers and Movers & Logistics provides reliable packing, house shifting, office relocation and logistics services from Coimbatore to destinations across India.
             </p>
-            <p className="text-base text-slate-600 mb-8 leading-relaxed">
-              From careful packing and loading to transportation and delivery, our moving solutions are designed for homes, offices and businesses.
-            </p>
+
+            {/* Provided Services Bullet Points */}
+            <div className="mb-8">
+              <p className="text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">Services Provided:</p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 text-sm text-slate-700">
+                <li className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-sky-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-semibold text-slate-800">(House, Office and Local Shifting)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-sky-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-semibold text-slate-800">(Packing and Unpacking)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-sky-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-semibold text-slate-800">Storage Warehouse</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-sky-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-semibold text-slate-800">Car and Bike Transportation</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-sky-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-semibold text-slate-800">Logistics Services</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-sky-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-semibold text-slate-800">Insurance Facility</span>
+                </li>
+                <li className="flex items-center gap-2 sm:col-span-2">
+                  <svg className="w-4 h-4 text-sky-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-semibold text-slate-800">A-Z Removings and Fittings</span>
+                </li>
+              </ul>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button

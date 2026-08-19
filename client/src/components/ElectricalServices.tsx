@@ -97,13 +97,15 @@ export default function ElectricalServices() {
               </div>
             </div>
 
-            <Button
-              size="lg"
-              className="bg-sky-600 hover:bg-sky-700 text-white btn-smooth"
-              onClick={() => window.location.href = 'tel:+919894525335'}
-            >
-              Enquire About Electrical Services
-            </Button>
+            <div className="flex justify-center lg:justify-start">
+              <Button
+                size="lg"
+                className="bg-sky-600 hover:bg-sky-700 text-white btn-smooth w-full sm:w-auto"
+                onClick={() => window.location.href = 'tel:+919894525335'}
+              >
+                Enquire About Electrical Services
+              </Button>
+            </div>
           </div>
         </div>
       </div>

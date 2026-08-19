@@ -4,6 +4,7 @@ import QuickHighlights from '@/components/QuickHighlights';
 import About from '@/components/About';
 import Services from '@/components/Services';
 import WhyChooseUs from '@/components/WhyChooseUs';
+import GstCertificates from '@/components/GstCertificates';
 import Process from '@/components/Process';
 import ElectricalServices from '@/components/ElectricalServices';
 import CertificationSection from '@/components/CertificationSection';
@@ -22,6 +23,7 @@ export default function Home() {
       <About />
       <Services />
       <WhyChooseUs />
+      <GstCertificates />
       <Process />
       <CoverageMap />
       <ElectricalServices />
